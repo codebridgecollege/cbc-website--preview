@@ -1,0 +1,29 @@
+name: Sync to preview repo
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare clean copy
+        run: |
+          rsync -av --exclude='.git' . ../repo-sync/
+          mv ../repo-sync ./repo-sync
+
+      - name: Push to preview repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.REPO_SYNC_TOKEN }}
+        with:
+          source-directory: 'repo-sync'
+          destination-github-username: codebridgecollege
+          destination-repository-name: cbc-website--preview
+          user-email: 'github-actions[bot]@users.noreply.github.com'
+          target-branch: main
+          create-target-branch-if-needed: true

@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "alice-review",
+    "name": "Alice",
+    "profilePic": "/reviews/alice.jpg",
+    "rating": 5,
+    "text": "Great courses and supportive instructors."
+  },
+  {
+    "slug": "bob-review",
+    "name": "Bob",
+    "profilePic": "/reviews/bob.jpg",
+    "rating": 4,
+    "text": "Solid curriculum, learned a lot."
+  }
+]

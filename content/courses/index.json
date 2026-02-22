@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "intro-to-js",
+    "title": "Introduction to JavaScript",
+    "description": "Learn the fundamentals of JavaScript.",
+    "duration": "4 weeks"
+  },
+  {
+    "slug": "react-basics",
+    "title": "React Basics",
+    "description": "Build modern UIs with React.",
+    "duration": "6 weeks"
+  }
+]

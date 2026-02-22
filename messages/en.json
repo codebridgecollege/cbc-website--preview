@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "CodeBridge College",
+    "welcome": "Welcome."
+  },
+  "reviews": {
+    "title": "Reviews",
+    "listTitle": "User Reviews"
+  },
+  "courses": {
+    "title": "Courses",
+    "listTitle": "Our Courses"
+  }
+}
