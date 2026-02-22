@@ -1,0 +1,22 @@
+{
+  "emails": [
+    {
+      "address": "laura.johanesova@codebridgecollege.com",
+      "label": "email"
+    }
+  ],
+  "phones": [
+    {
+      "number": "+447858115591",
+      "display": "+44 7858 115 591",
+      "label": "ph1"
+    },
+    {
+      "number": "+421911662436",
+      "display": "+421 911 662 436",
+      "label": "ph2"
+    }
+  ],
+  "linkedin": "https://www.linkedin.com/company/codebridge-college/",
+  "instagram": "https://www.instagram.com/codebridge_college?igsh=MW81Zmo1bDB0d2hzag%3D%3D&utm_source=qr"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Natália",
+    "role": "Researcher in Pharmacogenetics",
+    "img": "/images/testimonial-natalia.jpg",
+    "text": "In science, statistics, working with data, and their visualization are key skills that young researchers often lack. Winter Data School opened doors to the world of data, <b>helped me overcome the fear of learning a programming language</b>, and created a community."
+  },
+  {
+    "name": "Tomáš",
+    "role": "Enterprise Architect, VÚB banka",
+    "img": "/images/testimonial-tomas.jpg",
+    "text": "One of the best trainings I've attended. Designed for both business and IT. The instructors guided a mixed group through practical exercises. <b>Even non-technical users learned how to use tools like ChatGPT to generate Python code.</b>"
+  },
+  {
+    "name": "Iveta",
+    "role": "PhD researcher",
+    "img": "/images/testimonial-iveta.jpg",
+    "text": "Opened doors to new possibilities. I learned Python, which <b>helps me solve errors in my daily PhD work efficiently</b>. It was also a great networking opportunity."
+  },
+  {
+    "name": "Filip",
+    "role": "Bioinformatician, MultiplexDX",
+    "img": "/images/testimonial-filip.jpg",
+    "text": "Deepened my knowledge significantly. Practically oriented workshops advanced me considerably. <b>I can now utilize methods from data preprocessing to machine learning</b> to solve many problems."
+  },
+  {
+    "name": "Martina",
+    "role": "Senior Researcher, BMC SAS",
+    "img": "/images/testimonial-martina.jpg",
+    "text": "Interactive approach, excellent lecturers, and a relaxed atmosphere. <b>As a biologist without programming experience, I appreciated the clear explanations.</b>"
+  },
+  {
+    "name": "Monika",
+    "role": "Assistant Professor, UPJŠ",
+    "img": "/images/testimonial-monika.jpg",
+    "text": "Provided a strong foundation in Python, enabling me to integrate data analysis into my research. <b>These skills helped me win first prize for my poster at an international conference.</b>"
+  },
+  {
+    "name": "Laura",
+    "role": "PhD Researcher in Molecular Biology",
+    "img": "/images/testimonial-laura.jpg",
+    "text": "Winter Data School pre mňa znamenal veľký skok v dátovej analýze v Pythone. Taktiež mi lektori objasnili machine learning, čo mi <b>otvorilo možnosti nových projektov v rámci mojej vedeckej kariéry.</b>"
+  },
+  {
+    "name": "Miroslav",
+    "role": "PhD researcher in Advanced Materials",
+    "img": "/images/testimonial-miroslav.jpg",
+    "text": "Široký prehľad možností spracovávania dát s veľkým dôrazom na pridanú hodnotu. Najzaujímavejšia bola príležitosť spolupracovať na mini-hackathone a <b>hľadali sme riešenie pre reálny problém na základe dát.</b>"
+  },
+  {
+    "name": "Ľubomír",
+    "role": "Performance Testing & Diagnostics",
+    "img": "/images/testimonial-lubomir.jpg",
+    "text": "Vedel som, že je to dobré rozhodnutie a rozumná investícia. <b>5 intenzívnych dní, ktoré aj absolventa s minimálnymi skúsenosťami uvedú do práce s dátami.</b> Machine Learning a vizualizácia dát boli podané geniálne."
+  }
+]

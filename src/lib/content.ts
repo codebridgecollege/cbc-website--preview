@@ -1,31 +1,18 @@
 import { readFileSync } from "fs";
 import { join } from "path";
+import type { Course, ThemeClasses } from "@/types/course";
+import type { Contact } from "@/types/contact";
+import type { Tutor } from "@/types/tutor";
+import type { TickerLogo } from "@/types/ticker";
+import type { Testimonial } from "@/types/testimonial";
+import type { FAQItem } from "@/types/faq";
 
 const contentDir = join(process.cwd(), "content");
 
-export interface Review {
-  slug: string;
-  name: string;
-  profilePic: string;
-  rating: number;
-  text: string;
-}
-
-export interface Course {
-  slug: string;
-  title: string;
-  description: string;
-  duration: string;
-}
-
-export function getReviews(): Review[] {
-  const path = join(contentDir, "reviews", "index.json");
+export function getThemeClasses(): ThemeClasses {
+  const path = join(contentDir, "course-themes", "index.json");
   const data = readFileSync(path, "utf-8");
-  return JSON.parse(data) as Review[];
-}
-
-export function getReviewBySlug(slug: string): Review | undefined {
-  return getReviews().find((r) => r.slug === slug);
+  return JSON.parse(data) as ThemeClasses;
 }
 
 export function getCourses(): Course[] {
@@ -34,6 +21,32 @@ export function getCourses(): Course[] {
   return JSON.parse(data) as Course[];
 }
 
-export function getCourseBySlug(slug: string): Course | undefined {
-  return getCourses().find((c) => c.slug === slug);
+export function getContact(): Contact {
+  const path = join(contentDir, "contact", "index.json");
+  const data = readFileSync(path, "utf-8");
+  return JSON.parse(data) as Contact;
+}
+
+export function getTutors(): Tutor[] {
+  const path = join(contentDir, "tutors", "index.json");
+  const data = readFileSync(path, "utf-8");
+  return JSON.parse(data) as Tutor[];
+}
+
+export function getTickerLogos(): TickerLogo[] {
+  const path = join(contentDir, "ticker", "index.json");
+  const data = readFileSync(path, "utf-8");
+  return JSON.parse(data) as TickerLogo[];
+}
+
+export function getTestimonials(): Testimonial[] {
+  const path = join(contentDir, "testimonials", "index.json");
+  const data = readFileSync(path, "utf-8");
+  return JSON.parse(data) as Testimonial[];
+}
+
+export function getFAQs(): FAQItem[] {
+  const path = join(contentDir, "faq", "index.json");
+  const data = readFileSync(path, "utf-8");
+  return JSON.parse(data) as FAQItem[];
 }

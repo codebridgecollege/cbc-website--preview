@@ -1,0 +1,10 @@
+[
+  { "src": "/images/ticker-iza.png", "alt": "IZA" },
+  { "src": "/images/ticker-rrz.png", "alt": "RRZ" },
+  { "src": "/images/ticker-msd.png", "alt": "MSD" },
+  { "src": "/images/ticker-cancom.png", "alt": "CANCOM", "style": { "height": "3.5rem" } },
+  { "src": "/images/ticker-takeda.png", "alt": "Takeda", "style": { "height": "6rem" } },
+  { "src": "/images/ticker-vse.png", "alt": "VSE", "style": { "height": "5.5rem" } },
+  { "src": "/images/ticker-sav.png", "alt": "SAV", "style": { "height": "4rem" } },
+  { "src": "/images/ticker-lfuk.png", "alt": "LFUK", "style": { "height": "5.5rem" } }
+]

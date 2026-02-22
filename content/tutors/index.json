@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Imrich Berta",
+    "role": "Cofounder & Lead Data Scientist",
+    "img": "/images/tutor-imrich.jpg",
+    "link": "https://www.linkedin.com/search/results/all/?keywords=Imrich+Berta",
+    "desc": "A graduate of Applied Mathematics at the University of Cambridge, with experience in machine learning models for disease prediction and clinical data analysis. He currently works as a consultant for government institutions and start-ups. He actively mentors analysts and organises programming and data workshops for students. Imrich enjoys helping people who do not consider themselves \"math types\" understand and apply mathematical and statistical principles in practice."
+  },
+  {
+    "name": "Laura Johanesová",
+    "role": "Cofounder & Operations",
+    "img": "/images/tutor-laura.jpg",
+    "link": "https://www.linkedin.com/in/laura-johanesov%C3%A1/",
+    "desc": "Laura is a bioinformatician and biomedical scientist currently at the University of Vienna. The skills she has in R, Linux and Python are crucial for her research in regeneration."
+  },
+  {
+    "name": "Ján Dudek",
+    "role": "Senior Data Scientist",
+    "img": "/images/tutor-jan.jpg",
+    "link": "https://www.linkedin.com/search/results/all/?keywords=Ján+Dudek",
+    "desc": "Magna cum laude economics and econometrics graduate from Rice and Oxford. Improved the risk-equalization model at the Ministry of Health and implemented ML fraud detection algorithms in Slovak healthcare. Currently a senior data scientist specializing in the health insurance industry."
+  },
+  {
+    "name": "Oliver Hollý",
+    "role": "AI Researcher",
+    "img": "/images/tutor-oliver.jpg",
+    "link": "https://www.linkedin.com/search/results/all/?keywords=Oliver+Hollý",
+    "desc": "Oliver earned a Master in Cybernetics from the STU, specialising in innovative AI research in cybersecurity. As a member of ESET's core AI team, he's advanced behavioral malware analysis using state-of-the-art deep learning, with global applications and reach. His expertise spans from embedded systems, satellite imagery, and the full ML lifecycle."
+  },
+  {
+    "name": "Martin Veselý",
+    "role": "Innovation Lead",
+    "img": "/images/tutor-martin.jpg",
+    "link": "https://www.linkedin.com/search/results/all/?keywords=Martin+Veselý",
+    "desc": "Oxford-trained biochemist specializing in user-centered innovation and digital solutions. Leads cross-disciplinary programs, mentors startups across various industries, and teaches design thinking in organizations to drive real-world impact across sectors."
+  },
+  {
+    "name": "Soňa Hudecová",
+    "role": "Med Student & AI",
+    "img": "/images/tutor-sona.jpg",
+    "link": "https://www.linkedin.com/search/results/all/?keywords=Soňa+Hudecová",
+    "desc": "Final-year medical student at Charles University with a strong interest in oncology. She gained international clinical and research experience at Harvard Medical School, Sorbonne Medicine, UCL, DKFZ Heidelberg, Seoul National University. She is also engaged in cancer prevention and explores how data science and critical appraisal of clinical studies can be integrated into clinical oncology through Codebridge College and collaborations with health-tech startups."
+  }
+]

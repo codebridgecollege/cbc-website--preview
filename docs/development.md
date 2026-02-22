@@ -24,6 +24,14 @@ npm run build
 
 Output is in the `out/` directory (static HTML/CSS/JS).
 
+### Images
+
+All images are stored locally in `public/images/`. To re-download them from Google Drive (e.g. after source images are updated):
+
+```bash
+./scripts/download-images.sh
+```
+
 ### Updating content
 
 - **Reviews**: Edit `content/reviews/index.json` (name, profilePic, rating, text). Add or remove entries; use a unique `slug` per review.

@@ -1,14 +1,47 @@
 [
   {
-    "slug": "intro-to-js",
-    "title": "Introduction to JavaScript",
-    "description": "Learn the fundamentals of JavaScript.",
-    "duration": "4 weeks"
+    "id": "prague-data-school",
+    "title": "Prague Data School",
+    "badgeText": "Prague Edition",
+    "duration": "5 DAYS",
+    "theme": "amber",
+    "description": "Transform your career in 5 days. Escape the limitations of Excel and master Python in the heart of Europe.",
+    "nextStart": "Feb 9, 2026",
+    "applyLink": "https://prague.codebridgecollege.com/",
+    "features": [
+      { "strong": "Transition from Excel:", "text": "Automate reporting" },
+      { "strong": "AI Integration:", "text": "Use LLMs to clean data" },
+      { "strong": "Hackathon:", "text": "Solve real business cases" }
+    ]
   },
   {
-    "slug": "react-basics",
-    "title": "React Basics",
-    "description": "Build modern UIs with React.",
-    "duration": "6 weeks"
+    "id": "winter-data-school",
+    "title": "Winter Data School",
+    "badgeText": "Flagship",
+    "duration": "5 DAYS",
+    "theme": "blue",
+    "description": "Our legendary original track. A comprehensive deep dive into predictive modeling, machine learning, and statistical inference.",
+    "nextStart": "Mar 2, 2026",
+    "applyLink": "https://winterdataschool.com/",
+    "features": [
+      { "strong": "From Zero to ML:", "text": "No prior coding needed" },
+      { "strong": "Advanced AI:", "text": "Neural Networks & Deep Learning" },
+      { "strong": "Community:", "text": "Join exclusive alumni network" }
+    ]
+  },
+  {
+    "id": "health-data-school",
+    "title": "Health Data School",
+    "badgeText": "Med & Bio",
+    "duration": "5 DAYS",
+    "theme": "emerald",
+    "description": "Tailored for clinicians and researchers. Master survival analysis, Kaplan-Meier curves, and AI for healthcare to automate your research.",
+    "nextStart": "Mar 9, 2026",
+    "applyLink": "https://healthdataschool.codebridgecollege.com/",
+    "features": [
+      { "strong": "Survival Analysis:", "text": "Cox models & Kaplan-Meier" },
+      { "strong": "Publication Ready:", "text": "Clinical visualizations" },
+      { "strong": "Biostats:", "text": "Hypothesis testing & p-values" }
+    ]
   }
 ]

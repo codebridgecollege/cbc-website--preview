@@ -1,0 +1,42 @@
+[
+  {
+    "q": "I have no programming experience. Can I still register for the Data School?",
+    "a": "Yes. The first day covers Python basics and core programming concepts that we will be using over days 2 to 4. We also send simple pre-course materials so you can warm up before the bootcamp."
+  },
+  {
+    "q": "Does Codebridge College organise any other courses?",
+    "a": "We run 5-day bootcamps, the Data Schools, at least 6 times a year. Additionally, we organise specialised 5-day courses, such as the Biomedical Data School, Health Data School and more."
+  },
+  {
+    "q": "What are the learning goals and main topics of the Data School?",
+    "a": "You will learn to handle the entire data lifecycle. We cover everything from loading and cleaning raw data to visualising insights, performing statistical modelling and building machine learning models for classification and predictive analysis."
+  },
+  {
+    "q": "What is the daily schedule of the Data School?",
+    "a": "Our bootcamps are intensive. We usually run from 8:30 AM to 5:30 PM, with dedicated coffee breaks for networking and a lunch break."
+  },
+  {
+    "q": "Do I need to bring my own laptop?",
+    "a": "Yes, please bring your own laptop with a charger. We will provide instructions on any software you need to install in good advance of the course."
+  },
+  {
+    "q": "Is the Data School in-person or online?",
+    "a": "Our courses are held in person. This allows for better 1:1 support and networking during the bootcamp."
+  },
+  {
+    "q": "Will I receive a certificate upon completion?",
+    "a": "Yes! After successfully completing the 5-day bootcamp, you will receive a Codebridge College certificate that you can use as you need."
+  },
+  {
+    "q": "Does Codebridge College offer group discounts or corporate training?",
+    "a": "Yes. If you are looking to train a team, we offer group rates. We also provide training sessions tailored to your company's specific needs. For more information, please reach us at <a href='mailto:laura.johanesova@codebridgecollege.com' class='text-brand-blue hover:underline font-bold'>laura.johanesova@codebridgecollege.com</a>"
+  },
+  {
+    "q": "How can I become part of the Codebridge College community?",
+    "a": "Join one of our 5-day bootcamps (Data School) or come to a community event. By completing the Data School, you will become Codebridge College alumnus and you will get access to continuous learning, 1:1 data consulting, networking events and specialised workshops, just to mention a few benefits."
+  },
+  {
+    "q": "What is your cancellation/refund policy?",
+    "a": "We understand plans change. You can cancel up to 30 days before the start date for a full refund. For more details, check the full <a href='https://codebridgecollege.com/assets/Storno%20podmienky%20a%20reklamac%CC%8Cny%CC%81%20poriadok.pdf' target='_blank' class='text-brand-blue hover:underline font-bold'>cancellation policy</a>."
+  }
+]

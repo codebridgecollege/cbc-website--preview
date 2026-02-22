@@ -1,0 +1,23 @@
+{
+  "amber": {
+    "blob": "bg-amber-100/50 group-hover:bg-amber-200/50",
+    "badge": "bg-amber-50/80 text-amber-700 border-amber-100",
+    "iconContainer": "border-amber-100",
+    "icon": "text-amber-600",
+    "pulse": "bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]"
+  },
+  "blue": {
+    "blob": "bg-blue-100/50 group-hover:bg-blue-200",
+    "badge": "bg-blue-50/80 text-brand-blue border-blue-100",
+    "iconContainer": "border-blue-100",
+    "icon": "text-brand-blue",
+    "pulse": "bg-brand-blue shadow-[0_0_8px_rgba(37,99,235,0.5)]"
+  },
+  "emerald": {
+    "blob": "bg-emerald-100/50 group-hover:bg-emerald-200",
+    "badge": "bg-emerald-50/80 text-emerald-700 border-emerald-100",
+    "iconContainer": "border-emerald-100",
+    "icon": "text-emerald-600",
+    "pulse": "bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"
+  }
+}

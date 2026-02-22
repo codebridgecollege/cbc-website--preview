@@ -7,23 +7,34 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    container: ubuntu
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare clean copy
+      - name: Verify REPO_SYNC_TOKEN is set
         run: |
-          rsync -av --exclude='.git' . ../repo-sync/
-          mv ../repo-sync ./repo-sync
+          if [ -z "$REPO_SYNC_TOKEN" ]; then
+            echo "::error::REPO_SYNC_TOKEN secret is not set. Add it in Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          echo "Token is set (length: ${#REPO_SYNC_TOKEN})"
+        env:
+          REPO_SYNC_TOKEN: ${{ secrets.REPO_SYNC_TOKEN }}
 
       - name: Push to preview repo
-        uses: cpina/github-action-push-to-another-repository@main
+        uses: cpina/github-action-push-to-another-repository@v1.7.3
         env:
           API_TOKEN_GITHUB: ${{ secrets.REPO_SYNC_TOKEN }}
         with:
-          source-directory: 'repo-sync'
+          source-directory: .
           destination-github-username: codebridgecollege
           destination-repository-name: cbc-website--preview
-          user-email: 'github-actions[bot]@users.noreply.github.com'
           target-branch: main
-          create-target-branch-if-needed: true
+          user-email: 41898282+github-actions[bot]@users.noreply.github.com
+          user-name: github-actions[bot]
+
+      # - name: Push to preview repo
+      # run: |
+      #   git remote add preview "https://x-access-token:${REPO_SYNC_TOKEN}@github.com/codebridgecollege/cbc-website--preview.git"
+      #   git push preview dev:main --force
