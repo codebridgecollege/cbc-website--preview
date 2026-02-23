@@ -6,6 +6,7 @@ import type { Tutor } from "@/types/tutor";
 import type { TickerLogo } from "@/types/ticker";
 import type { Testimonial } from "@/types/testimonial";
 import type { FAQItem } from "@/types/faq";
+import { withBasePath } from "./base-path";
 
 const contentDir = join(process.cwd(), "content");
 
@@ -42,7 +43,11 @@ export function getTickerLogos(): TickerLogo[] {
 export function getTestimonials(): Testimonial[] {
   const path = join(contentDir, "testimonials", "index.json");
   const data = readFileSync(path, "utf-8");
-  return JSON.parse(data) as Testimonial[];
+  const testimonials = JSON.parse(data) as Testimonial[];
+  return testimonials.map((testimonial) => ({
+    ...testimonial,
+    img: withBasePath(testimonial.img),
+  }));
 }
 
 export function getFAQs(): FAQItem[] {
