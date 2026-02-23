@@ -143,7 +143,7 @@ html {
 
 .scroll-progress {
     position: fixed; top: 0; left: 0; height: 3px;
-    background: linear-gradient(90deg, #2563EB, #60A5FA);
+    background: #2563EB;
     z-index: 100; width: 0%;
 }
 @supports (animation-timeline: scroll()) {
@@ -152,23 +152,11 @@ html {
 @keyframes scroll-watch { to { width: 100%; } }
 
 .glass-panel {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 2rem;
     position: relative;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bg-grid {
-    position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    background-image:
-        linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.8;
 }
 
 .h1-display {
@@ -213,38 +201,20 @@ html {
 .btn-primary {
     background-color: #2563EB;
     color: white;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     border: 1px solid rgba(255,255,255,0.1);
 }
 .btn-primary:hover {
     background-color: #1D4ED8;
     transform: translateY(-1px);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
 
 .btn-white-ghost {
-    backdrop-filter: blur(4px);
 }
 
 .nav-glass {
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    background: rgba(15, 23, 42, 0.98);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-}
-
-.hero-grid {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
 .ticker-logo {
@@ -260,14 +230,8 @@ html {
     transform: scale(1.1);
 }
 
-.shadow-tile { box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05); }
-.shadow-tile-hover { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
-
-@keyframes blob {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(50px, -50px) scale(1.15); }
-}
-.animate-blob { animation: blob 25s infinite alternate cubic-bezier(0.4, 0, 0.2, 1); }
+.shadow-tile { }
+.shadow-tile-hover { }
 
 @keyframes ticker {
     0% { transform: translate3d(0, 0, 0); }

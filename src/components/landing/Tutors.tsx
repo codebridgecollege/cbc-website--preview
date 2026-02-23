@@ -11,20 +11,18 @@ const Tutors: React.FC<TutorsProps> = ({ tutors }) => {
   return (
     <section
       id="tutors"
-      className="py-12 md:py-24 px-4 md:px-6 lg:px-12 relative z-10 overflow-hidden"
+      className="py-12 md:py-24 px-4 md:px-6 lg:px-12 relative z-10"
     >
-      <div className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-blue-100/50 opacity-60 blur-3xl -z-10 pointer-events-none mix-blend-multiply"></div>
-
-      <div className="max-w-[1400px] mx-auto relative">
+      <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-16 relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[150%] bg-blue-100/40 blur-[80px] -z-10 rounded-full opacity-60 pointer-events-none mix-blend-multiply"></div>
           <span className="mono-label mb-2 block text-brand-blue relative z-10">
             World-Class Faculty
           </span>
-          <h2 className="h2-display text-brand-navy relative z-10">
+          <h2 className="h2-display text-brand-navy">
             Learn from the Masters
           </h2>
-          <p className="text-xl text-slate-600 leading-relaxed mt-4 max-w-2xl mx-auto relative z-10">
+          <p className="text-xl text-slate-600 leading-relaxed mt-4 max-w-2xl mx-auto">
             Experts from top institutions and global companies.
           </p>
         </div>
@@ -36,7 +34,7 @@ const Tutors: React.FC<TutorsProps> = ({ tutors }) => {
               href={tutor.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative h-[450px] rounded-[2rem] overflow-hidden cursor-pointer shadow-tile hover:shadow-tile-hover transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-brand-blue"
+              className="group relative h-[450px] rounded-[2rem] overflow-hidden cursor-pointer border border-slate-200 transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-brand-blue"
             >
               <Image
                 src={withBasePath(tutor.img)}
@@ -47,23 +45,21 @@ const Tutors: React.FC<TutorsProps> = ({ tutors }) => {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
 
-              <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
-
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-transparent lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-slate-900/60" />
 
               <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end h-full">
                 <div className="transform translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <div className="w-8 h-1 bg-brand-blue mb-4 rounded-full"></div>
                   <div className="flex justify-between items-center mb-2">
                     <div className="pr-2">
-                      <h4 className="text-2xl font-bold text-white leading-tight mb-1 drop-shadow-sm">
+                      <h4 className="text-2xl font-bold text-white leading-tight mb-1">
                         {tutor.name}
                       </h4>
-                      <p className="text-brand-blueLight font-mono text-xs font-bold uppercase tracking-widest drop-shadow-sm">
+                      <p className="text-brand-blueLight font-mono text-xs font-bold uppercase tracking-widest">
                         {tutor.role}
                       </p>
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-[#0077b5] hover:scale-110 transition-all duration-300 shrink-0 backdrop-blur-sm">
+                    <div className="w-10 h-10 rounded-full bg-white/30 border border-white/40 flex items-center justify-center text-white hover:bg-[#0077b5] hover:scale-110 transition-all duration-300 shrink-0">
                       <svg
                         className="w-4 h-4 text-white"
                         fill="currentColor"

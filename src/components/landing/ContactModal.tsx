@@ -33,11 +33,11 @@ const ContactModal: React.FC<ContactModalProps> = ({
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div
-        className="absolute inset-0 bg-slate-900/60 backdrop-blur-md transition-opacity duration-300"
+        className="absolute inset-0 bg-slate-900/70 transition-opacity duration-300"
         onClick={onClose}
       ></div>
 
-      <div className="glass-panel p-8 lg:p-10 w-full max-w-lg relative shadow-tile bg-white border border-white/50 animate-fade-in-up">
+      <div className="glass-panel p-8 lg:p-10 w-full max-w-lg relative bg-white border border-slate-200 animate-fade-in-up">
         <button
           onClick={onClose}
           className="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 transition-colors text-brand-navy/40 hover:text-brand-navy/60 focus:outline-none"

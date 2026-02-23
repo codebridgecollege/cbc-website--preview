@@ -8,24 +8,21 @@ const Scholarships: React.FC = () => {
       className="py-12 md:py-24 px-4 md:px-6 lg:px-12 relative z-10"
     >
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <div className="text-center mb-16 relative">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[150%] bg-blue-100/50 blur-[80px] -z-10 rounded-full opacity-60 pointer-events-none mix-blend-multiply"></div>
-          <span className="mono-label mb-2 block text-brand-blue relative z-10">
+        <div className="text-center mb-16">
+          <span className="mono-label mb-2 block text-brand-blue">
             Giving Back
           </span>
-          <h2 className="h2-display text-brand-navy relative z-10">
+          <h2 className="h2-display text-brand-navy">
             Scholarships & Grants
           </h2>
-          <p className="text-xl text-slate-600 leading-relaxed mt-4 max-w-2xl mx-auto relative z-10">
+          <p className="text-xl text-slate-600 leading-relaxed mt-4 max-w-2xl mx-auto">
             We believe that financial constraints should never stand in the way
             of ambition and talent.
           </p>
         </div>
 
-        <div className="glass-panel p-8 md:p-10 lg:p-16 bg-brand-blue text-white relative overflow-hidden shadow-tile border-none">
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="glass-panel p-8 md:p-10 lg:p-16 bg-brand-blue text-white border border-brand-blue/20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-white/30">
                 Scholarships for Students
@@ -49,7 +46,7 @@ const Scholarships: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
                 <Link
                   href="/#courses"
-                  className="inline-flex items-center justify-center bg-white text-brand-blue hover:bg-blue-50 h-14 px-8 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 whitespace-nowrap"
+                  className="inline-flex items-center justify-center bg-white text-brand-blue hover:bg-blue-50 h-14 px-8 rounded-full font-bold text-lg transition-all hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   Check Course Pages
                 </Link>

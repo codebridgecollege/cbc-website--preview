@@ -18,7 +18,7 @@ const Courses: React.FC<CoursesProps> = ({ courses, themeClasses }) => {
           <span className="mono-label mb-2 block text-brand-blue relative z-10">
             Our Courses
           </span>
-          <h2 className="h2-display text-brand-navy relative z-10">
+          <h2 className="h2-display text-brand-navy">
             Choose your track
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed mt-4 max-w-2xl mx-auto relative z-10">
@@ -34,15 +34,11 @@ const Courses: React.FC<CoursesProps> = ({ courses, themeClasses }) => {
             return (
               <div
                 key={course.id}
-                className={`rounded-[2rem] p-6 md:p-8 shadow-tile hover:shadow-tile-hover border border-white/60 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] flex flex-col h-full relative group backdrop-blur-2xl bg-white/60 hover:bg-white/80 overflow-hidden ${course.theme === "blue" ? "ring-1 ring-blue-100" : ""}`}
+                className={`rounded-[2rem] p-6 md:p-8 border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] flex flex-col h-full relative group bg-white overflow-hidden ${course.theme === "blue" ? "ring-1 ring-blue-100" : ""}`}
               >
-                <div
-                  className={`absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl -mr-20 -mt-20 transition-colors duration-500 pointer-events-none ${theme.blob}`}
-                ></div>
-
                 <div className="flex justify-between items-start mb-8 relative z-10">
                   <span
-                    className={`px-4 py-1.5 rounded-full backdrop-blur-sm text-xs font-bold uppercase tracking-wider border ${theme.badge}`}
+                    className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border ${theme.badge}`}
                   >
                     {course.badgeText}
                   </span>
@@ -69,7 +65,7 @@ const Courses: React.FC<CoursesProps> = ({ courses, themeClasses }) => {
                   {course.features.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <div
-                        className={`w-5 h-5 rounded-full bg-white/80 border flex items-center justify-center flex-shrink-0 shadow-sm ${theme.iconContainer}`}
+                        className={`w-5 h-5 rounded-full bg-white border flex items-center justify-center flex-shrink-0 ${theme.iconContainer}`}
                       >
                         <svg
                           className={`w-3 h-3 ${theme.icon}`}
@@ -92,7 +88,7 @@ const Courses: React.FC<CoursesProps> = ({ courses, themeClasses }) => {
                   ))}
                 </ul>
 
-                <div className="h-px bg-gradient-to-b from-slate-200 to-slate-100 w-full mb-6"></div>
+                <div className="h-px bg-slate-200 w-full mb-6" />
 
                 <div className="flex items-center justify-between gap-4 relative z-10">
                   <div>
@@ -113,7 +109,7 @@ const Courses: React.FC<CoursesProps> = ({ courses, themeClasses }) => {
                       href={course.applyLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn bg-brand-blue text-white rounded-full h-14 px-8 font-bold text-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 hover:-translate-y-0.5 border border-white/20"
+                      className="btn bg-brand-blue text-white rounded-full h-14 px-8 font-bold text-lg hover:bg-blue-700 transition-all hover:-translate-y-0.5 border border-white/20"
                     >
                       Apply Now
                     </a>

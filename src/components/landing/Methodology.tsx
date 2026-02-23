@@ -145,15 +145,14 @@ const Methodology: React.FC = () => {
       className="py-12 md:py-24 px-4 md:px-6 lg:px-12 relative z-10"
     >
       <div className="max-w-[1400px] mx-auto">
-        <div className="max-w-3xl mx-auto text-center mb-20 relative">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[150%] bg-blue-100/50 blur-[100px] -z-10 rounded-full opacity-60 pointer-events-none mix-blend-multiply"></div>
-          <span className="mono-label mb-2 block text-brand-blue relative z-10">
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <span className="mono-label mb-2 block text-brand-blue">
             Methodology
           </span>
-          <h2 className="h2-display mb-6 text-brand-navy relative z-10">
+          <h2 className="h2-display mb-6 text-brand-navy">
             Hands-on by default
           </h2>
-          <p className="text-xl text-slate-600 leading-relaxed relative z-10">
+          <p className="text-xl text-slate-600 leading-relaxed">
             We designed Codebridge workshops to be practical and rigorous - so
             you don&apos;t just &quot;learn concepts,&quot; you build analytical
             and coding skills that you can apply immediately.
@@ -166,13 +165,9 @@ const Methodology: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-[2rem] p-8 shadow-tile hover:shadow-tile-hover border border-white/60 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] relative overflow-hidden group backdrop-blur-2xl bg-white/60 hover:bg-white/90"
+                className="rounded-[2rem] p-8 border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] bg-white group"
               >
-                <div
-                  className={`absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl -mr-20 -mt-20 transition-colors duration-500 pointer-events-none ${styles.blob}`}
-                ></div>
-
-                <div className="relative z-10">
+                <div>
                   <div
                     className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ${styles.iconBg} ${styles.iconText}`}
                   >

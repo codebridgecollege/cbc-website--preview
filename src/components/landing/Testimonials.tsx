@@ -13,49 +13,35 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
 
   const visibleTestimonials = showAll ? testimonials : testimonials.slice(0, 3);
 
-  const blobPositions = [
-    "top-0 right-0 -mr-20 -mt-20",
-    "bottom-0 left-0 -ml-20 -mb-20",
-    "top-0 left-0 -ml-20 -mt-20",
-    "bottom-0 right-0 -mr-20 -mb-20",
-  ];
-
   return (
     <section
       id="reviews"
       className="py-12 md:py-24 px-4 md:px-6 lg:px-12 relative z-20"
     >
       <div className="max-w-[1400px] mx-auto">
-        <div className="mb-16 text-center relative">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[150%] bg-blue-100/40 blur-[80px] -z-10 rounded-full opacity-60 pointer-events-none mix-blend-multiply"></div>
-          <span className="mono-label mb-2 block text-brand-blue relative z-10">
+        <div className="mb-16 text-center">
+          <span className="mono-label mb-2 block text-brand-blue">
             Testimonials
           </span>
-          <h2 className="h2-display text-brand-navy relative z-10">
+          <h2 className="h2-display text-brand-navy">
             What our alumni say
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleTestimonials.map((testimonial, index) => {
-            const blobPos = blobPositions[index % blobPositions.length];
-            return (
+          {visibleTestimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="rounded-[2rem] p-8 shadow-tile hover:shadow-tile-hover border border-white/60 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] relative overflow-hidden group backdrop-blur-2xl bg-white/70 hover:bg-white/90 flex flex-col h-full"
+                className="rounded-[2rem] p-8 border border-slate-200 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] bg-white flex flex-col h-full group"
               >
-                <div
-                  className={`absolute w-64 h-64 rounded-full blur-3xl transition-colors duration-500 pointer-events-none bg-blue-100/50 group-hover:bg-blue-200/50 ${blobPos}`}
-                ></div>
-
-                <div className="relative z-10 flex flex-col h-full">
+                <div className="flex flex-col h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <Image
                       src={testimonial.img}
                       alt={testimonial.name}
                       width={48}
                       height={48}
-                      className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm transition-all duration-300 shrink-0 ring-2 ring-blue-50 group-hover:ring-blue-100"
+                      className="w-12 h-12 rounded-full object-cover border-2 border-slate-100 transition-all duration-300 shrink-0"
                       unoptimized
                     />
                     <div>
@@ -78,15 +64,14 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                   </p>
                 </div>
               </div>
-            );
-          })}
+          ))}
         </div>
 
         {!showAll && (
           <div className="mt-12 text-center">
             <button
               onClick={() => setShowAll(true)}
-              className="btn bg-white/50 backdrop-blur-md rounded-full px-8 group border border-white/60 text-brand-navy hover:bg-white hover:text-brand-blue hover:shadow-lg transition-all duration-300 text-lg font-bold"
+              className="btn bg-slate-100 rounded-full px-8 group border border-slate-200 text-brand-navy hover:bg-white hover:text-brand-blue hover:border-brand-blue transition-all duration-300 text-lg font-bold"
             >
               Load More Stories
               <svg

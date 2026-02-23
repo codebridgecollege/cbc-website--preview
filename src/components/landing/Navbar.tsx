@@ -59,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 nav-glass ${scrolled ? "shadow-lg" : ""}`}
+      className="fixed top-0 w-full z-50 nav-glass"
     >
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-12">
         <div className="h-20 flex items-center justify-between">
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
           <div className="flex items-center gap-4 shrink-0">
             <button
               onClick={onOpenModal}
-              className="hidden lg:flex btn btn-primary !h-10 !px-8 !text-sm xl:!text-base !font-semibold shadow-md shadow-blue-900/40"
+              className="hidden lg:flex btn btn-primary !h-10 !px-8 !text-sm xl:!text-base !font-semibold"
             >
               Contact Us
             </button>
@@ -141,7 +141,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
       </div>
 
       <div
-        className={`lg:hidden absolute top-0 left-0 w-full bg-slate-900/95 backdrop-blur-xl border-b border-slate-800 shadow-xl pt-24 pb-8 z-40 transition-all duration-200 ${mobileMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`}
+        className={`lg:hidden absolute top-0 left-0 w-full bg-slate-900/98 border-b border-slate-800 pt-24 pb-8 z-40 transition-all duration-200 ${mobileMenu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`}
       >
         <div className="px-6 space-y-4">
           {navItems.map((item) => (
@@ -162,7 +162,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
                 onOpenModal();
                 setMobileMenu(false);
               }}
-              className="btn btn-primary w-full text-lg h-14 shadow-lg shadow-blue-900/50"
+              className="btn btn-primary w-full text-lg h-14"
             >
               Contact Us
             </button>

@@ -40,18 +40,15 @@ const Hero: React.FC = () => {
           sizes="100vw"
           priority
         />
-        <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent lg:hidden"></div>
-        <div className="hidden lg:block absolute inset-0 bg-slate-900/30"></div>
-        <div className="hidden lg:block absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
-        <div className="hero-grid opacity-30 hidden lg:block"></div>
+        <div className="absolute inset-x-0 bottom-0 h-full bg-slate-900/80 lg:hidden" />
+        <div className="hidden lg:block absolute inset-0 bg-slate-900/40" />
       </div>
 
       <div className="relative z-10 flex flex-col justify-start lg:justify-end lg:h-full flex-1 bg-transparent px-6 pb-12 pt-0 lg:pt-0 -mt-[4.75rem] lg:mt-0 lg:max-w-[1400px] lg:mx-auto lg:px-[40px] lg:pb-20">
         <div className="hidden lg:block absolute top-32 left-0 w-full px-[40px] pointer-events-none">
-          <div className="inline-flex items-center gap-3 px-3 py-1.5 lg:px-5 lg:py-2.5 rounded-full bg-blue-500/20 lg:bg-white/10 border border-blue-400/30 lg:border-white/10 backdrop-blur-md transition-all duration-300 cursor-default shadow-sm lg:shadow-black/10 pointer-events-auto">
+          <div className="inline-flex items-center gap-3 px-3 py-1.5 lg:px-5 lg:py-2.5 rounded-full bg-blue-500/20 lg:bg-white/10 border border-blue-400/30 lg:border-white/10 pointer-events-auto">
             <span className="relative flex h-2.5 w-2.5 lg:h-4 lg:w-4 items-center justify-center">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF94] opacity-75 duration-1000"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 lg:h-3 lg:w-3 bg-[#00FF94] shadow-[0_0_10px_#00FF94]"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 lg:h-3 lg:w-3 bg-[#00FF94]" />
             </span>
             <span className="text-blue-50 lg:text-white/90 text-xs lg:text-sm font-bold uppercase tracking-wider font-mono pt-[2px]">
               New Courses Open
@@ -59,29 +56,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div
-          className="hero-grid opacity-20 lg:hidden absolute inset-0 z-0"
-          style={{ maskImage: "none", WebkitMaskImage: "none" }}
-        ></div>
-
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 lg:gap-20 relative z-20">
           <div className="w-full lg:max-w-4xl animate-fade-in-up relative">
             <h1 className="h1-display mb-6 lg:mb-14 text-white leading-[1.1] lg:leading-none tracking-tight">
-              <span className="block drop-shadow-md lg:drop-shadow-lg">
-                Become fluent in
-              </span>
-              <span
-                className="text-[#ACD3FF] block"
-                style={{
-                  textShadow:
-                    "0 0 15px rgba(172,211,255,0.05), 0 0 30px rgba(172,211,255,0.03), 0 0 50px rgba(172,211,255,0.01)",
-                }}
-              >
-                Data, Statistics & AI.
-              </span>
+              <span className="block">Become fluent in</span>
+              <span className="text-[#ACD3FF] block">Data, Statistics & AI.</span>
             </h1>
 
-            <p className="text-lg lg:text-xl text-slate-300 lg:text-blue-50 max-w-xl leading-relaxed mb-8 lg:mb-14 font-medium drop-shadow-sm">
+            <p className="text-lg lg:text-xl text-slate-300 lg:text-blue-50 max-w-xl leading-relaxed mb-8 lg:mb-14 font-medium">
               Designed for busy professionals and researchers. Structured
               workshops, supportive mentors, and immediate application. Learn
               the essential data skills that power science, business and
@@ -93,14 +75,14 @@ const Hero: React.FC = () => {
                 <Link
                   href="#courses"
                   onClick={(e) => scrollToSection(e, "courses")}
-                  className="btn btn-primary h-14 px-8 text-lg shadow-xl shadow-blue-900/30 w-full sm:w-auto flex items-center justify-center"
+                  className="btn btn-primary h-14 px-8 text-lg w-full sm:w-auto flex items-center justify-center"
                 >
                   Explore Courses
                 </Link>
                 <Link
                   href="#scholarships"
                   onClick={(e) => scrollToSection(e, "scholarships")}
-                  className="btn border border-white/20 bg-white/5 text-white hover:bg-white hover:text-brand-blue h-14 px-8 text-lg w-full sm:w-auto backdrop-blur-sm flex items-center justify-center transition-all"
+                  className="btn border border-white/20 bg-white/5 text-white hover:bg-white hover:text-brand-blue h-14 px-8 text-lg w-full sm:w-auto flex items-center justify-center transition-all"
                 >
                   Scholarships
                 </Link>

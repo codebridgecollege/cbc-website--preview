@@ -47,10 +47,8 @@ const PhoneLink = ({ href, text }: { href: string; text: string }) => {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-blue/5 blur-[100px] rounded-full pointer-events-none"></div>
-
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-12 relative z-10">
+    <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 relative">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between gap-12">
         <div className="md:col-span-2 lg:w-fit">
           <div className="flex items-center gap-2 mb-8">
             <Link href="/">

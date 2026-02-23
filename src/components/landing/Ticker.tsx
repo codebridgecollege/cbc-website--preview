@@ -21,9 +21,6 @@ const Ticker: React.FC<TickerProps> = ({ logos }) => {
         </div>
 
         <div className="relative w-full">
-          <div className="absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
-          <div className="absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
-
           <div className="relative flex overflow-x-hidden group w-full cursor-default select-none">
             <div
               className="animate-ticker flex whitespace-nowrap items-center w-max"
