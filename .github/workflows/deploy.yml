@@ -38,6 +38,8 @@ jobs:
           #
           # TODO: Once the website is hosted on a custom domain, set BASE_PATH to empty string for prod
           BASE_PATH: ${{ github.repository == 'codebridgecollege/cbc-website--preview' && '/cbc-website--preview' || '/cbc-website' }}
+          # Next.js Image component does not auto-prefix basePath; we need it for image src URLs
+          NEXT_PUBLIC_BASE_PATH: ${{ github.repository == 'codebridgecollege/cbc-website--preview' && '/cbc-website--preview' || '/cbc-website' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

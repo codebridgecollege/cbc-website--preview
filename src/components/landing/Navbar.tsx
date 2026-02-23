@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 import { usePathname } from "next/navigation";
 
 interface NavbarProps {
@@ -17,8 +18,9 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScroll = window.scrollY;
-      setScrolled(currentScroll > 50);
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 50);
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -67,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
             aria-label="CodeBridge Home"
           >
             <Image
-              src="/images/logo.png"
+              src={withBasePath("/images/logo.png")}
               alt="CodeBridge Logo"
               width={158}
               height={48}

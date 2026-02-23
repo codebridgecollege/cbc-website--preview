@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 
 const PhoneLink = ({ href, text }: { href: string; text: string }) => {
   const [status, setStatus] = useState<"idle" | "copied">("idle");
@@ -54,7 +55,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center gap-2 mb-8">
             <Link href="/">
               <Image
-                src="/images/logo.png"
+                src={withBasePath("/images/logo.png")}
                 alt="CodeBridge Logo"
                 width={158}
                 height={48}

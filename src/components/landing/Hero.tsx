@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 
 const Hero: React.FC = () => {
   const scrollToSection = (
@@ -30,7 +31,7 @@ const Hero: React.FC = () => {
     <section className="relative w-full flex flex-col lg:block min-h-[100dvh] lg:h-screen bg-slate-900 lg:bg-slate-900 overflow-hidden pt-20 lg:pt-0">
       <div className="relative w-full h-auto lg:absolute lg:inset-0 lg:h-full z-0 shrink-0 -mt-10 lg:mt-0">
         <Image
-          src="/images/hero-bg.jpg"
+          src={withBasePath("/images/hero-bg.jpg")}
           alt="Data Science Workshop"
           width={1920}
           height={1080}

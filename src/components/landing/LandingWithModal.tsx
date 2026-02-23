@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 import Hero from "./Hero";
 import Ticker from "./Ticker";
 import Courses from "./Courses";
@@ -42,7 +43,7 @@ const LandingWithModal: React.FC<LandingWithModalProps> = ({
 
         <div className="relative w-full h-[50vh] min-h-[400px] overflow-hidden z-10">
           <Image
-            src="/images/workshop-env.jpg"
+            src={withBasePath("/images/workshop-env.jpg")}
             alt="CodeBridge Workshop Environment"
             fill
             className="object-cover object-center"
@@ -57,7 +58,7 @@ const LandingWithModal: React.FC<LandingWithModalProps> = ({
 
         <div className="relative w-full h-[50vh] min-h-[400px] overflow-hidden z-10">
           <Image
-            src="/images/hands-on.jpg"
+            src={withBasePath("/images/hands-on.jpg")}
             alt="Hands-on learning"
             fill
             className="object-cover object-center"
@@ -74,7 +75,7 @@ const LandingWithModal: React.FC<LandingWithModalProps> = ({
 
         <div className="relative w-full h-[50vh] min-h-[400px] overflow-hidden z-10">
           <Image
-            src="/images/community.jpg"
+            src={withBasePath("/images/community.jpg")}
             alt="CodeBridge Community"
             fill
             className="object-cover object-center"

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 import type { Tutor } from "@/types/tutor";
 
 interface TutorsProps {
@@ -38,7 +39,7 @@ const Tutors: React.FC<TutorsProps> = ({ tutors }) => {
               className="group relative h-[450px] rounded-[2rem] overflow-hidden cursor-pointer shadow-tile hover:shadow-tile-hover transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-brand-blue"
             >
               <Image
-                src={tutor.img}
+                src={withBasePath(tutor.img)}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 alt={tutor.name}

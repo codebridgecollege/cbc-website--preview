@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 import type { Testimonial } from "@/types/testimonial";
 
 interface TestimonialsProps {
@@ -51,7 +52,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <Image
-                      src={testimonial.img}
+                      src={withBasePath(testimonial.img)}
                       alt={testimonial.name}
                       width={48}
                       height={48}

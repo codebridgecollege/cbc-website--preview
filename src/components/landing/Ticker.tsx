@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 import type { TickerLogo } from "@/types/ticker";
 
 interface TickerProps {
@@ -31,7 +32,7 @@ const Ticker: React.FC<TickerProps> = ({ logos }) => {
               {tickerLogos.map((logo, idx) => (
                 <Image
                   key={idx}
-                  src={logo.src}
+                  src={withBasePath(logo.src)}
                   alt={logo.alt}
                   width={150}
                   height={60}
